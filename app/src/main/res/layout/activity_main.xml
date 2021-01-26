@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/THEME_TRADITIONAL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:text="TRADITIONAL"
+        app:layout_constraintBottom_toTopOf="@+id/THEME_HOLO_DARK"
+        app:layout_constraintEnd_toStartOf="@+id/Theme_Material_Dialog_Alert"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/THEME_HOLO_DARK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:text="THEME_HOLO_DARK"
+        app:layout_constraintBottom_toTopOf="@+id/THEME_HOLO_LIGHT"
+        app:layout_constraintEnd_toStartOf="@+id/api24HoloDark"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/THEME_TRADITIONAL" />
+
+    <Button
+        android:id="@+id/THEME_HOLO_LIGHT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:textSize="12sp"
+        android:text="THEME_HOLO_LIGHT"
+        app:layout_constraintBottom_toTopOf="@+id/THEME_DEVICE_DEFAULT_DARK"
+        app:layout_constraintEnd_toStartOf="@id/Theme_Material_Light_Dialog_Alert"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/THEME_HOLO_DARK" />
+
+    <Button
+        android:id="@+id/THEME_DEVICE_DEFAULT_DARK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:text="DEVICE_DEFAULT_DARK"
+        app:layout_constraintBottom_toTopOf="@+id/THEME_DEVICE_DEFAULT_LIGHT"
+        app:layout_constraintEnd_toStartOf="@+id/Theme_DeviceDefault_Dialog_Alert"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/THEME_HOLO_LIGHT" />
+
+    <Button
+        android:id="@+id/THEME_DEVICE_DEFAULT_LIGHT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:text="DEVICE_DEFAULT_LIGHT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Theme_DeviceDefault_Light_Dialog_Alert"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/THEME_DEVICE_DEFAULT_DARK" />
+
+    <Button
+        android:id="@+id/Theme_Material_Dialog_Alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:text="Mat_Alert"
+        app:layout_constraintBottom_toBottomOf="@+id/THEME_TRADITIONAL"
+        app:layout_constraintEnd_toStartOf="@id/api24Traditional"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/THEME_TRADITIONAL"
+        app:layout_constraintTop_toTopOf="@+id/THEME_TRADITIONAL" />
+
+    <Button
+        android:id="@+id/Theme_Material_Light_Dialog_Alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:textSize="12sp"
+        android:text="Mat_Light_Alert"
+        app:layout_constraintBottom_toBottomOf="@+id/THEME_HOLO_LIGHT"
+        app:layout_constraintEnd_toStartOf="@id/api24HoloLight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/THEME_HOLO_LIGHT"
+        app:layout_constraintTop_toTopOf="@+id/THEME_HOLO_LIGHT" />
+
+    <Button
+        android:id="@+id/Theme_DeviceDefault_Dialog_Alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:text="DeviceDft_Alert"
+        app:layout_constraintBottom_toBottomOf="@+id/THEME_DEVICE_DEFAULT_DARK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/THEME_DEVICE_DEFAULT_DARK"
+        app:layout_constraintTop_toTopOf="@+id/THEME_DEVICE_DEFAULT_DARK" />
+
+    <Button
+        android:id="@+id/Theme_DeviceDefault_Light_Dialog_Alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:text="DeviceDft_Light_Alert"
+        app:layout_constraintBottom_toBottomOf="@+id/THEME_DEVICE_DEFAULT_LIGHT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/THEME_DEVICE_DEFAULT_LIGHT"
+        app:layout_constraintTop_toTopOf="@+id/THEME_DEVICE_DEFAULT_LIGHT" />
+
+    <Button
+        android:id="@+id/api24Traditional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:text="api24Traditional"
+        app:layout_constraintBottom_toBottomOf="@id/THEME_TRADITIONAL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Theme_Material_Dialog_Alert"
+        app:layout_constraintTop_toTopOf="@id/THEME_TRADITIONAL" />
+
+    <Button
+        android:id="@+id/api24HoloDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:text="api24HoloDark"
+        app:layout_constraintBottom_toBottomOf="@id/THEME_HOLO_DARK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/THEME_HOLO_DARK"
+        app:layout_constraintTop_toTopOf="@id/THEME_HOLO_DARK" />
+
+    <Button
+        android:id="@+id/api24HoloLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:textSize="12sp"
+        android:text="api24HoloLight"
+        app:layout_constraintBottom_toBottomOf="@id/THEME_HOLO_LIGHT"
+        app:layout_constraintStart_toEndOf="@id/Theme_Material_Light_Dialog_Alert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/THEME_HOLO_LIGHT" />
+
+</android.support.constraint.ConstraintLayout>
